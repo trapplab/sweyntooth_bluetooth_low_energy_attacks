@@ -242,7 +242,7 @@ while True:
             elif check_range(accepted_keys, 7, 15):
                 print(Fore.RED + 'Peripheral allows key entropy reduction. The key size range is '
                                  '[' + str(min(accepted_keys)) + ',' + str(max(accepted_keys)) + ']')
-            elif check_range(accepted_keys, 16, 17):
+            elif check_range(accepted_keys, 17, 17):
                 print(Fore.RED + 'Peripheral accepts key size greater than 16. Non-compliance!!!')
             elif check_range(accepted_keys, 16, 16) and not check_range(accepted_keys, 7, 15):
                 print(Fore.GREEN + 'Peripheral only accepts key size of 16. We are good to go!!!')
